@@ -1,0 +1,155 @@
+body {
+  font-family: 'Hind', sans-serif;
+}
+
+footer {
+  background-color: #4C5A5E;
+}
+
+h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2.125rem;
+}
+
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.25rem;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.15rem;
+  color: #242424;
+}
+
+.splurge {
+  font-family: 'Hind', sans-serif;
+  font-size: 1.25em;
+  letter-spacing: 1.5px;
+}
+
+.splurge-small {
+  font-family: 'Hind', sans-serif;
+  font-size: 1em;
+  letter-spacing: 1.2px;
+}
+
+.splurge-lg {
+  font-family: 'Hind', sans-serif;
+  font-size: 3em;
+  letter-spacing: 1.5px;
+}
+
+.fancy-heading {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 4rem;
+}
+
+.fancy-heading-small {
+  font-size: 3rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.section-heading-text {
+  letter-spacing: 2px;
+}
+
+.text-footer-light {
+  color: #ccc;
+}
+footer a:hover {
+  color: #b3b3b3;
+}
+
+.bg-primary {
+  background-color: #4A90E2!important;
+}
+
+.bg-space {
+  background-image: url('../images/drifting-alone.png');
+  background-size: cover;
+  background-position: 50% 100%;
+  min-height: 100vh;
+}
+
+.navbar {
+  padding: .5rem 0rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    transition: color 0.25s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #4A90E2;
+}
+
+.btn {
+  width: 12em;
+  padding: .75rem 1.25rem;
+  font-weight: 500;
+}
+
+.btn:active {
+  transform: translateY(5px);
+}
+
+.box-shadow-success {
+  box-shadow: 0 7px 0 0 #145710;
+}
+
+.box-shadow-primary {
+  box-shadow: 0 7px 0 0 #1D5392;
+}
+
+.bg-gray {
+  background-color: #3F4756;
+}
+
+.bg-dark-blue {
+  background-color: #062542;
+}
+
+.slant-down-left {
+  position: relative;
+}
+.slant-down-left::before {
+  position: absolute;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' viewBox='0 0 100 50' fill='rgb(255,255,255)' fill-opacity='1'%3E%3Cpolygon points='0,0 100,0 0,50'%3E%3C/polygon%3E%3C/svg%3E");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  content: '';
+  height: 50px;
+  top: 0px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+
+
+@media (min-width: 760px) {
+  h1 {
+    font-size: 3.125rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .bg-space {
+    background-position: 50% 46%;
+  }
+}

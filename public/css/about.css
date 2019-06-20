@@ -1,0 +1,10 @@
+header {
+  background-color: rgba(0,0,0,.6);
+}
+
+.bg-about-header {
+  background-image: url("../images/about-header-img.png");
+  background-size: cover;
+  background-position: 50% 20%;
+  height: 100vh;
+}
