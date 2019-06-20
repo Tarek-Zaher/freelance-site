@@ -1,9 +1,8 @@
 header {
-  background-image: url('../images/hero-image.png');
+  background-image: url('../images/hero-image.webp');
   background-size: cover;
   min-height: 100vh;
 }
-
 .navbar {
   border-bottom: .25px solid #f2f2f2;
 }
