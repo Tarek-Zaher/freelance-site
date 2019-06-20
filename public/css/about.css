@@ -3,7 +3,7 @@ header {
 }
 
 .bg-about-header {
-  background-image: url("../images/about-header-image.webp");
+  background-image: url("../images/about-header-image.jpg");
   background-size: cover;
   background-position: 50% 20%;
   height: 100vh;
