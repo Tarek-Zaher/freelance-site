@@ -10,6 +10,10 @@ h5 {
   font-family: 'Work Sans', sans-serif;
 }
 
+p {
+  line-height: 1.8;
+}
+
 .bg-about-header {
   background-image: url("../images/about-header-image.jpg");
   background-size: cover;
