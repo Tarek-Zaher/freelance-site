@@ -7,17 +7,21 @@ footer {
 }
 
 h1 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Hind', sans-serif;
   font-size: 2.125rem;
 }
 
 h2 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Hind', sans-serif;
   font-size: 1.25rem;
 }
 
+h4 {
+  letter-spacing: 2px;
+}
+
 p {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Hind', sans-serif;
   font-size: 1.15rem;
   color: #242424;
 }
@@ -47,7 +51,7 @@ p {
 
 .fancy-heading-small {
   font-size: 3rem;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Hind', sans-serif;
 }
 
 .section-heading-text {

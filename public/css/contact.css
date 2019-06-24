@@ -1,0 +1,49 @@
+header {
+  background-color: rgba(0,0,0,.6);
+}
+
+p {
+  line-height: 1.8;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+  background-color: #F0F0F0;
+  color: #5e5e5e;
+  padding: 2em 1em;
+  border: 1px solid #f0f0f0;
+}
+
+textarea {
+  resize: vertical;
+  width: 100%;
+}
+
+.bg-contact-header {
+  background-image: url("../images/contact-header-img.jpg");
+  background-size: cover;
+  background-position: 50% 20%;
+  height: 84vh;
+}
+
+.bg-contact-by-phone {
+  background-image: url("../images/contact-by-phone.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.submit-button {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #3DDC97;
+  box-shadow: 0 7px 0 #1CA86B;
+  padding: .6em 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.submit-button:active {
+  transform: translateY(7px);
+  box-shadow: none;
+}

@@ -2,10 +2,6 @@ header {
   background-color: rgba(0,0,0,.6);
 }
 
-h4 {
-  letter-spacing: 2px;
-}
-
 h5 {
   font-family: 'Work Sans', sans-serif;
 }
@@ -17,8 +13,8 @@ p {
 .bg-about-header {
   background-image: url("../images/about-header-image.jpg");
   background-size: cover;
-  background-position: 50% 20%;
-  height: 100vh;
+  background-position: 50% 30%;
+  height: 84vh;
 }
 
 .profile-picture {

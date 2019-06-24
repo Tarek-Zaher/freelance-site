@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contact</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3e932090ad.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Hind:400,700|Work+Sans&display=swap" rel="stylesheet">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="/css/contact.css">
+  </head>
+  <body>
+    <div class="container-fluid bg-contact-header px-0">
+    <header class="container-fluid">
+      <div class="container">
+
+      <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light py-4">
+          <div class="d-flex flex-grow-1">
+            <!-- Navbar Brand -->
+            <a class="navbar-brand" href="/">
+            <img src="../images/logo.png" width="89px" height="42px" alt="logo">
+            </a>
+            <div class="w-100 text-right">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+              <!-- Navbar Items -->
+              <li class="nav-item pr-lg-5">
+                  <a href="/" class="nav-link text-uppercase">home</a>
+              </li>
+              <li class="nav-item pr-lg-5">
+                  <a href="/about" class="nav-link text-uppercase">about</a>
+              </li>
+              <li class="nav-item pr-lg-5">
+                  <a href="/my-work" class="nav-link text-uppercase">my work</a>
+              </li>
+              <li class="nav-item pr-lg-5">
+                  <a href="/blog" class="nav-link text-uppercase">blog</a>
+              </li>
+              <li class="nav-item pr-lg-0">
+                  <a href="/contact" class="nav-link text-uppercase">contact</a>
+              </li>
+          </ul>
+      </nav>
+  </header>
+  </div>
+
+  <section class="container-fluid bg-dark-blue">
+    <div class="container py-4">
+      <h5 class="display-4 text-uppercase text-white text-right section-heading-text my-auto">Contact</h5>
+    </div>
+  </section>
+
+  <section class="container pt-5 my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h4 class="display-4 font-weight-bold text-uppercase">Let's Talk</h4>
+        <p class="text-muted">Whether it's chatting over a cup of coffee or brainstorming some of your very own ideas over the phone, I want to know how I can help your business grow. To get started, give me a call or fill out the form below and I will follow up with you right away! </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container pb-5 mb-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <form action="/contact" method="post">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <input type="text" class="form-control mb-3" name="name" aria-label="name" placeholder="Your Name">
+              <input type="email" class="form-control mb-3" name="email" aria-label="email" placeholder="Email Address">
+              <input type="tel" class="form-control mb-3" name="phone" aria-label="phone number" placeholder="Phone Number">
+              <input type="text" class="form-control mb-3" name="company" aria-label="Your Company" placeholder="Your Company">
+            </div>
+            <div class="col-lg-4 bg-contact-by-phone d-none d-lg-block text-center mb-3">
+              <p class="text-light pt-4">Would you prefer to talk to someone in person?</p>
+              <p class="text-white font-weight-bold">Speak on the phone:</p>
+              <button type="button" class="btn btn-dark bg-dark mb-4"><i class="fas fa-mobile-alt"></i> (936) 676-5067</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 pr-lg-0">
+              <textarea name="message" class="mb-3" rows="3" placeholder="Questions / Project Vision"></textarea>
+              <button type="submit" class="submit-button">Send</button>
+            </div>
+          </div>
+        </form>
+        <div class="row mt-5 px-3 text-center">
+          <div class="col bg-contact-by-phone d-block d-lg-none mt-5">
+            <p class="text-light pt-4">Would you prefer to talk to someone in person?</p>
+            <p class="text-white font-weight-bold">Speak on the phone:</p>
+            <button type="button" class="btn btn-dark bg-dark mb-4"><i class="fas fa-mobile-alt"></i> (936) 676-5067</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <%- include("partials/footer") -%>
