@@ -73,6 +73,7 @@ footer a:hover {
   background-image: url('../images/drifting-alone.jpg');
   background-size: cover;
   background-position: 50% 100%;
+  background-attachment: fixed;
   min-height: 100vh;
 }
 

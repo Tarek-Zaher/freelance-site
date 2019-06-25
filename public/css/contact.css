@@ -22,6 +22,7 @@ textarea {
   background-image: url("../images/contact-header-img.jpg");
   background-size: cover;
   background-position: 50% 20%;
+  background-attachment: fixed;
   height: 84vh;
 }
 

@@ -13,7 +13,8 @@ p {
 .bg-about-header {
   background-image: url("../images/about-header-image.jpg");
   background-size: cover;
-  background-position: 50% 30%;
+  background-position: 50% 40%;
+  background-attachment: fixed;
   height: 84vh;
 }
 
