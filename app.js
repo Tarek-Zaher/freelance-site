@@ -49,14 +49,13 @@ app.post("/contact", (req, res) => {
   };
   smtpTrans.sendMail(mailOpts, function (error, response) {
     if (error) {
-      res.render('send-failure');
+      res.render('contact-failure');
     }
     else {
-      res.render('send-success');
+      res.render('contact-success');
     }
   });
 });
-
 
 
 
