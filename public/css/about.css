@@ -14,7 +14,7 @@ p {
   background-image: url("../images/about-header-image.jpg");
   background-size: cover;
   background-position: 50% 40%;
-  background-attachment: fixed;
+  background-attachment: scroll;
   height: 84vh;
 }
 
@@ -24,4 +24,14 @@ p {
   width: 200px;
   height: 200px;
   shape-outside: circle(50%);
+}
+
+
+
+@media (min-width: 760px) {
+
+  .bg-about-header {
+    background-attachment: fixed;
+  }
+
 }
