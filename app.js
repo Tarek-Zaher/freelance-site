@@ -24,6 +24,18 @@ app.get("/contact", (req, res) => {
   res.render("contact");
 });
 
+app.get("/my-work", (req, res) => {
+  res.render("my-work");
+});
+
+app.get("/longhornstartup", (req, res) => {
+  res.redirect("http://www.longhornstartup.com");
+});
+
+app.get("/buckscupofjoe", (req, res) => {
+  res.redirect("http://www.buckscupofjoe.com");
+});
+
 app.post("/contact", (req, res) => {
   let name = req.body.name;
   let email = req.body.email;
@@ -56,8 +68,6 @@ app.post("/contact", (req, res) => {
     }
   });
 });
-
-
 
 
 

@@ -1,0 +1,23 @@
+header {
+  background-color: rgba(0,0,0,.6);
+}
+
+.yellow-block {
+  background-color: #F6C947;
+}
+
+.blue-block {
+  background-color: #7492C8;
+}
+
+.project-title {
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+hr {
+  border: none;
+  border-bottom: 2px solid white;
+}
