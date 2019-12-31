@@ -36,6 +36,18 @@ app.get("/buckscupofjoe", (req, res) => {
   res.redirect("http://www.buckscupofjoe.com");
 });
 
+app.get("/usat", (req, res) => {
+  res.redirect("https://usatstore.com/");
+});
+
+app.get("/playtri", (req, res) => {
+  res.redirect("https://www.playtri.com/");
+});
+
+app.get("/thepeddler", (req, res) => {
+  res.redirect("http://www.peddlernet.com/");
+});
+
 app.post("/contact", (req, res) => {
   let name = req.body.name;
   let email = req.body.email;

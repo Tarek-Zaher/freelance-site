@@ -2,13 +2,22 @@ header {
   background-color: rgba(0,0,0,.6);
 }
 
-.yellow-block {
-  background-color: #F6C947;
-}
-
 .blue-block {
   background-color: #7492C8;
 }
+
+.yellow-block {
+  background-color: #F6C847;
+}
+
+.green-block {
+  background-color: #0EAD69;
+}
+
+.purple-block {
+  background-color: #8473B2;
+}
+
 
 .project-title {
   text-transform: uppercase;
@@ -26,6 +35,28 @@ hr {
   border-bottom: 2px solid white;
 }
 
+.btn-bg-green {
+  color: white;
+  background-color: #0EAD69;
+  box-shadow: 0 7px 0 #097C4B;
+}
+.btn-bg-green:hover {
+  color: white;
+  background-color: #0B9E5F;
+}
+
+.btn-bg-blue {
+  color: white;
+  background-color: #7492C8;
+  box-shadow: 0 7px 0 #536D9C;
+}
+.btn-bg-blue:hover {
+  background-color: #6587C5;
+}
+
+.cta-text {
+  font-size: 2.5rem;
+}
 
 @media (min-width: 760px) {
 
@@ -35,6 +66,10 @@ hr {
 
   .project-description {
     font-size: 1.5rem;
+  }
+
+  .cta-text {
+    font-size: 3rem;
   }
 
 }
