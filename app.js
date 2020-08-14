@@ -49,47 +49,48 @@ app.get("/thepeddler", (req, res) => {
 });
 
 app.post("/contact", (req, res) => {
-  let name = req.body.name;
-  let email = req.body.email;
-  let phone = req.body.phone;
-  let company = req.body.company;
-  let message = req.body.message;
-
-  let mailOpts, smtpTrans;
-  smtpTrans = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
-    auth: {
-      user: process.env.GMAIL_USER,
-      pass: process.env.GMAIL_PASS
-    }
-  });
-
-  var recaptcha_url = "https://www.google.com/recaptcha/api/siteverify?";
-    recaptcha_url += "secret=" + '6Ld88r4ZAAAAAGesDGVYCBeFCFjyuLNx-RjxZ3cV' + "&";
-    recaptcha_url += "response=" + request.body["g-recaptcha-response"] + "&";
-    recaptcha_url += "remoteip=" + request.connection.remoteAddress;
-    Request(recaptcha_url, function(error, resp, body) {
-        body = JSON.parse(body);
-        if(body.success !== undefined && !body.success) {
-            res.render('contact-failure');
-        }
-        mailOpts = {
-          from: name + ' &lt;' + email + '&gt;',
-          to: process.env.GMAIL_USER,
-          subject: 'New Customer Response from lufkinswebdesigner.com ',
-          html: `<p>${name} (${email}) from the company ${company} sent the following message:</p> <p>${message}</p> <p>From,</p> <p>${name}</p> <p>${email}</p> <p>${phone}</p> <p>${company}</p>`
-        };
-          smtpTrans.sendMail(mailOpts, function (error, response) {
-            if (error) {
-              res.render('contact-failure');
-            }
-            else {
-              res.render('contact-success');
-            }
-          });
-    });
+  res.render('contact-failure');
+  // let name = req.body.name;
+  // let email = req.body.email;
+  // let phone = req.body.phone;
+  // let company = req.body.company;
+  // let message = req.body.message;
+  //
+  // let mailOpts, smtpTrans;
+  // smtpTrans = nodemailer.createTransport({
+  //   host: 'smtp.gmail.com',
+  //   port: 465,
+  //   secure: true,
+  //   auth: {
+  //     user: process.env.GMAIL_USER,
+  //     pass: process.env.GMAIL_PASS
+  //   }
+  // });
+  //
+  // var recaptcha_url = "https://www.google.com/recaptcha/api/siteverify?";
+  //   recaptcha_url += "secret=" + '6Ld88r4ZAAAAAGesDGVYCBeFCFjyuLNx-RjxZ3cV' + "&";
+  //   recaptcha_url += "response=" + request.body["g-recaptcha-response"] + "&";
+  //   recaptcha_url += "remoteip=" + request.connection.remoteAddress;
+  //   Request(recaptcha_url, function(error, resp, body) {
+  //       body = JSON.parse(body);
+  //       if(body.success !== undefined && !body.success) {
+  //           res.render('contact-failure');
+  //       }
+  //       mailOpts = {
+  //         from: name + ' &lt;' + email + '&gt;',
+  //         to: process.env.GMAIL_USER,
+  //         subject: 'New Customer Response from lufkinswebdesigner.com ',
+  //         html: `<p>${name} (${email}) from the company ${company} sent the following message:</p> <p>${message}</p> <p>From,</p> <p>${name}</p> <p>${email}</p> <p>${phone}</p> <p>${company}</p>`
+  //       };
+  //         smtpTrans.sendMail(mailOpts, function (error, response) {
+  //           if (error) {
+  //             res.render('contact-failure');
+  //           }
+  //           else {
+  //             res.render('contact-success');
+  //           }
+  //         });
+  //   });
 
 
 });
