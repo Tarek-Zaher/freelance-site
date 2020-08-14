@@ -49,6 +49,22 @@ app.get("/thepeddler", (req, res) => {
 });
 
 app.post("/contact", (req, res) => {
+  let name = req.body.name;
+  let email = req.body.email;
+  let phone = req.body.phone;
+  let company = req.body.company;
+  let message = req.body.message;
+
+  let mailOpts, smtpTrans;
+  smtpTrans = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
+    auth: {
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS
+    }
+  });
 
   var recaptcha_url = "https://www.google.com/recaptcha/api/siteverify?";
     recaptcha_url += "secret=" + '6Ld88r4ZAAAAAGesDGVYCBeFCFjyuLNx-RjxZ3cV' + "&";
@@ -59,22 +75,6 @@ app.post("/contact", (req, res) => {
         if(body.success !== undefined && !body.success) {
             res.render('contact-failure');
         }
-        let name = req.body.name;
-        let email = req.body.email;
-        let phone = req.body.phone;
-        let company = req.body.company;
-        let message = req.body.message;
-
-        let mailOpts, smtpTrans;
-        smtpTrans = nodemailer.createTransport({
-          host: 'smtp.gmail.com',
-          port: 465,
-          secure: true,
-          auth: {
-            user: process.env.GMAIL_USER,
-            pass: process.env.GMAIL_PASS
-          }
-        });
         mailOpts = {
           from: name + ' &lt;' + email + '&gt;',
           to: process.env.GMAIL_USER,
